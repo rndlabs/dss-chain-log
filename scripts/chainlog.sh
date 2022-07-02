@@ -7,19 +7,19 @@ set -e
 
 [[ "$ETH_RPC_URL" ]] || { echo "Please set a ETH_RPC_URL"; exit 1; }
 
-CHANGELOG=0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F
+CHANGELOG=0x4989f405b9c449ccf3fdea0f60b613aff1e55e14
 
-echo -e "Network: $(seth chain)"
+echo -e "Network: $(cast chain-id)"
 if [[ -z $1 ]];
 then
-    list=$(seth call "$CHANGELOG" 'list()(bytes32[])')
+    list=$(cast call "$CHANGELOG" 'list()(bytes32[])')
     IFS=","
     for key in $list
     do
-        seth --to-ascii "$key"
-        seth call "$CHANGELOG" 'getAddress(bytes32)(address)' "$key"
+        cast --to-ascii "$key"
+        cast call "$CHANGELOG" 'getAddress(bytes32)(address)' "$key"
     done
 
 else
-    seth call "$CHANGELOG" 'getAddress(bytes32)(address)' "$(seth --to-bytes32 "$(seth --from-ascii "$1")")"
+    cast call "$CHANGELOG" 'getAddress(bytes32)(address)' "$(cast --to-bytes32 "$(cast --from-ascii "$1")")"
 fi
