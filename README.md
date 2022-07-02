@@ -1,17 +1,14 @@
 # dss-chain-log
-![Build Status](https://github.com/makerdao/dss-chain-log/actions/workflows/.github/workflows/tests.yaml/badge.svg?branch=master)
+![Build Status](https://github.com/rndlabs/dss-chain-log/actions/workflows/.github/workflows/tests.yaml/badge.svg?branch=main)
 
-An auth-managed on-chain changelog for the MCD system
+An auth-managed on-chain changelog, from MakerDAO, used for the rndlabs system.
 
 ## Usage
 
-Contract Address: `0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F`
+Contract Address: `0x4989f405b9c449ccf3fdea0f60b613aff1e55e14`
 
 * [Mainnet](https://etherscan.io/address/0xda0ab1e0017debcd72be8599041a2aa3ba7e740f#code)
-* [Kovan](https://kovan.etherscan.io/address/0xda0ab1e0017debcd72be8599041a2aa3ba7e740f#code)
-* [Goerli](https://goerli.etherscan.io/address/0xda0ab1e0017debcd72be8599041a2aa3ba7e740f#code)
-* [Rinkeby](https://rinkeby.etherscan.io/address/0xda0ab1e0017debcd72be8599041a2aa3ba7e740f#code)
-* [Ropsten](https://ropsten.etherscan.io/address/0xda0ab1e0017debcd72be8599041a2aa3ba7e740f#code)
+* [Gnosis Chain](https://blockscout.com/xdai/mainnet/address/0x4989F405b9c449Ccf3FdEa0f60B613afF1E55E14/contracts#address-tabs)
 
 ### Public functions
 
@@ -33,12 +30,12 @@ Contract Address: `0xdA0Ab1e0017DEbCd72Be8599041a2aa3bA7e740F`
 
 ### Requirements
 
-* [Dapptools](https://github.com/dapphub/dapptools)
+* [Forge](https://github.com/foundry-rs/foundry)
 
 ### Testing
 
 ```
-$ dapp update
+$ forge update
 $ make test
 ```
 
