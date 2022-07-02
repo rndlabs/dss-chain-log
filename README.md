@@ -7,7 +7,7 @@ An auth-managed on-chain changelog, from MakerDAO, used for the rndlabs system.
 
 Contract Address: `0x4989f405b9c449ccf3fdea0f60b613aff1e55e14`
 
-* [Mainnet](https://etherscan.io/address/0xda0ab1e0017debcd72be8599041a2aa3ba7e740f#code)
+* [Mainnet](https://etherscan.io/address/0x4989F405b9c449Ccf3FdEa0f60B613afF1E55E14#code)
 * [Gnosis Chain](https://blockscout.com/xdai/mainnet/address/0x4989F405b9c449Ccf3FdEa0f60B613afF1E55E14/contracts#address-tabs)
 
 ### Public functions
