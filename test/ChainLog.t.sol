@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-pragma solidity ^0.6.12;
+pragma solidity ^0.8.13;
 
-import "ds-test/test.sol";
+import "forge-std/Test.sol";
 
-import "./ChainLog.sol";
+import "../src/ChainLog.sol";
 
-contract ChainLogTest is DSTest {
+contract ChainLogTest is Test {
     ChainLog clog;
 
     function setUp() public {
